@@ -1,0 +1,83 @@
+menu "Application Configuration"
+
+	config GPIO_RANGE_MAX
+		int
+		default 33 if IDF_TARGET_ESP32
+
+	choice CAN_BITRATE
+		prompt "CAN Bitrate"
+		default CAN_BITRATE_500
+		help
+			Select the CAN bitrate for the example.
+		config CAN_BITRATE_25
+			bool "BITRATE_25"
+			help
+				CAN bitrate is 25 Kbit/s.
+		config CAN_BITRATE_50
+			bool "BITRATE_50"
+			help
+				CAN bitrate is 50 Kbit/s.
+		config CAN_BITRATE_100
+			bool "BITRATE_100"
+			help
+				CAN bitrate is 100 Kbit/s.
+		config CAN_BITRATE_125
+			bool "BITRATE_125"
+			help
+				CAN bitrate is 125 Kbit/s.
+		config CAN_BITRATE_250
+			bool "BITRATE_250"
+			help
+				CAN bitrate is 250 Kbit/s.
+		config CAN_BITRATE_500
+			bool "BITRATE_500"
+			help
+				CAN bitrate is 500 Kbit/s.
+		config CAN_BITRATE_800
+			bool "BITRATE_800"
+			help
+				CAN bitrate is 800 Kbit/s.
+		config CAN_BITRATE_1000
+			bool "BITRATE_1000"
+			help
+				CAN bitrate is 1 Mbit/s.
+	endchoice
+
+	config TWAI_BITRATE
+		int
+		default 25000 if CAN_BITRATE_25
+		default 50000 if CAN_BITRATE_50
+		default 100000 if CAN_BITRATE_100
+		default 125000 if CAN_BITRATE_125
+		default 250000 if CAN_BITRATE_250
+		default 500000 if CAN_BITRATE_500
+		default 800000 if CAN_BITRATE_800
+		default 1000000 if CAN_BITRATE_1000
+
+	config CTX_GPIO
+		int "CTX GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 21 if IDF_TARGET_ESP32
+		help
+			GPIO number (IOxx) to CTX.
+			Some GPIOs are used for other purposes (flash connections, etc.).
+			GPIOs 35-39 are input-only so cannot be used as outputs.
+
+	config CRX_GPIO
+		int "CRX GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 22 if IDF_TARGET_ESP32
+		help
+			GPIO number (IOxx) to CRX.
+			Some GPIOs are used for other purposes (flash connections, etc.).
+			GPIOs 35-39 are input-only so cannot be used as outputs.
+
+	config EXAMPLE_SSP_ENABLED
+		bool "Secure Simple Pairing"
+		depends on BT_CLASSIC_ENABLED
+		default y
+		help
+			This enables the Secure Simple Pairing. If disable this option,
+			Bluedroid will only support Legacy Pairing
+
+endmenu
