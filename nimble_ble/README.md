@@ -23,4 +23,6 @@ This project uses the ESP-NimBLE host stack.
 Unlike ESP-Bluedroid host stack, ESP-NimBLE host stack allows concurrent connections.   
 The maximum number of simultaneous connections is specified here.   
 <img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/73c527ca-a44f-4b2b-bccb-6f6ccbac8397" />
+
+You can view CAN frames using multiple Android devices.   
 <img width="864" height="576" alt="Image" src="https://github.com/user-attachments/assets/a6191a56-44cb-4baa-a596-69f23ba4fadf" />
