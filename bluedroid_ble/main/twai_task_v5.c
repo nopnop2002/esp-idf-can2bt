@@ -107,5 +107,8 @@ void twai_receive_task(void *arg)
 			break;
 		}
 	} // end while
-}
 
+	ESP_ERROR_CHECK(twai_stop());
+	ESP_ERROR_CHECK(twai_driver_uninstall());
+	vTaskDelete(NULL);
+}
