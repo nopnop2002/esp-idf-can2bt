@@ -3,8 +3,7 @@ CAN(TWAI) to Bluetooth bridge for ESP-IDF.
 
 <img width="864" height="576" alt="Image" src="https://github.com/user-attachments/assets/3de84e18-a1b7-4b2a-a441-d7bd21c8ea50" />
 
-<img width="960" height="720" alt="Image" src="https://github.com/user-attachments/assets/422d4016-63be-4030-af45-4e39466d599c" />
-<img width="960" height="720" alt="Image" src="https://github.com/user-attachments/assets/a9993c0c-b2c2-4465-ae52-2acc9d134d70" />
+<img width="960" height="720" alt="Image" src="https://github.com/user-attachments/assets/742401d7-7c45-4d35-8d8c-142c25332918" />
 
 # Software requirements
 ESP-IDF V5.0 or later.   
