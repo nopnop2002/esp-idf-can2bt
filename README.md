@@ -9,6 +9,9 @@ CAN(TWAI) to Bluetooth bridge for ESP-IDF.
 ESP-IDF V5.0 or later.   
 ESP-IDF V4.4 release branch reached EOL in July 2024.   
 
+__Note for ESP-IDF V6__   
+Under ESP-IDF V6.0 or later, this project uses a new twai driver.   
+
 # Hardware requirements
 
 - SN65HVD23x CAN-BUS Transceiver   
