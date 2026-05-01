@@ -1,4 +1,5 @@
 # For classic bluetooth
+Android, Windows 10/11, and Linux are available.   
 
 ## Using Android   
 
