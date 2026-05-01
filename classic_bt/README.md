@@ -81,7 +81,7 @@ Android, Windows 10/11, and Linux are available.
 	```
 	$ screen /dev/rfcomm0
 	```
-	<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/efe2b3b1-72ba-431d-96e2-c12473b5a367" />
+	<img width="820" height="517" alt="Image" src="https://github.com/user-attachments/assets/2e563d5f-c1ba-415c-ad52-e32612d821e4" />
 
 - Remove serial device after use   
 	```
