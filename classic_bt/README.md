@@ -15,7 +15,7 @@ Android, Windows 10/11, and Linux are available.
 	<img width="864" height="576" alt="Image" src="https://github.com/user-attachments/assets/1c4b57ef-7fce-402c-83c1-5c5f26a6fe26" />
 
 ## Using Windows10/11   
-I used a USB Bluetooth dongle.   
+- Connect the USB Bluetooth dongle   
 
 - Open Settigs -> Devices   
 	Click Add bluetooth or other device.   
@@ -39,6 +39,7 @@ I used a USB Bluetooth dongle.
 
 
 ## Using Linux
+- Connect the USB Bluetooth dongle   
 
 - Install package   
 	```
