@@ -32,3 +32,6 @@ I used a USB Bluetooth dongle.
 - Open terminal software & open new com port   
 	I use TeraTerm.   
 	<img width="799" height="426" alt="Image" src="https://github.com/user-attachments/assets/3fec1343-cffa-4b41-a3f6-94fd9a861777" />
+
+- Unpair the device after use   
+	<img width="1138" height="675" alt="Image" src="https://github.com/user-attachments/assets/2df38b14-c4d6-455d-8139-b4031747dd03" />
