@@ -24,10 +24,13 @@ Android, Windows 10/11, and Linux are available.
 - Select Bluetooth   
 	<img width="550" height="633" alt="Image" src="https://github.com/user-attachments/assets/9b98db9f-f837-4e39-8a46-e9fc0caf97de" />
 
-- Add ESP_SPP_ACCEPTER   
+- Add ESP_SPP_ACCEPTOR   
 	<img width="550" height="633" alt="Image" src="https://github.com/user-attachments/assets/7af78e85-1b94-425f-a050-3d3155691ff3" />
 
-- Pair with ESP_SPP_ACCEPTER   
+- Enter the PIN for ESP_SPP_ACCEPTOR   
+	<img width="550" height="633" alt="Image" src="https://github.com/user-attachments/assets/e6d7aef9-cf4f-43e0-916f-3dda3619ddfe" />
+
+- Pair with ESP_SPP_ACCEPTOR   
 	<img width="550" height="633" alt="Image" src="https://github.com/user-attachments/assets/9895ee51-311e-4e38-a27d-f5a35865c174" />
 
 - Open terminal software & open new com port   
