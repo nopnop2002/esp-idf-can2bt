@@ -35,7 +35,7 @@ Android, Windows 10/11, and Linux are available.
 
 - Open terminal software & open new com port   
 	I use TeraTerm.   
-	<img width="799" height="426" alt="Image" src="https://github.com/user-attachments/assets/3fec1343-cffa-4b41-a3f6-94fd9a861777" />
+	<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/d4c29c47-c245-4dae-9456-4aec811bdf43" />
 
 - Unpair the device after use   
 	<img width="1138" height="675" alt="Image" src="https://github.com/user-attachments/assets/2df38b14-c4d6-455d-8139-b4031747dd03" />
