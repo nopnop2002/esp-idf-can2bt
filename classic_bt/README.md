@@ -43,7 +43,7 @@ Android, Windows 10/11, and Linux are available.
 
 - Install package   
 	```
-	$ sudo apt install bluez
+	$ sudo apt install bluez screen
 	```
 
 - Start daemon   
@@ -61,7 +61,7 @@ Android, Windows 10/11, and Linux are available.
 	[NEW] Device F0:08:D1:C7:B5:1E ESP_SPP_ACCEPTOR
 	[bluetoothctl]> scan off
 	[bluetoothctl]> pair F0:08:D1:C7:B5:1E
-	[agent] Confirm passkey 771049 (yes/no): yes
+	[agent] Enter PIN code: 1234
 	Pairing successful
 	[ESP_SPP_ACCEPTOR]> exit
 	```
@@ -73,29 +73,12 @@ Android, Windows 10/11, and Linux are available.
 	/dev/rfcomm0
 	```
 
-- Monitor serial device   
+- Monitor serial device using screen   
+	screen termination is `ctrl+a k`   
 	```
-	$ cat /dev/rfcomm0
-	Standard ID: 0x106       DLC: 1  Data: 0x10
-
-	Extended ID: 0x00000106  DLC: 2  Data: 0x10 0x11
-
-	Standard ID: 0x107       DLC: 2  Data: 0x10 0x11
-
-	Extended ID: 0x00000107  DLC: 3  Data: 0x10 0x11 0x12
-
-	Standard ID: 0x108       DLC: 3  Data: 0x10 0x11 0x12
-
-	Extended ID: 0x00000108  DLC: 4  Data: 0x10 0x11 0x12 0x13
-
-	Standard ID: 0x109       DLC: 4  Data: 0x10 0x11 0x12 0x13
-
-	Extended ID: 0x00000109  DLC: 5  Data: 0x10 0x11 0x12 0x13 0x14
-
-	Standard ID: 0x10a       DLC: 5  Data: 0x10 0x11 0x12 0x13 0x14
-
-	Extended ID: 0x0000010a  DLC: 6  Data: 0x10 0x11 0x12 0x13 0x14 0x15
+	$ screen /dev/rfcomm0
 	```
+	<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/efe2b3b1-72ba-431d-96e2-c12473b5a367" />
 
 - Remove serial device after use   
 	```
