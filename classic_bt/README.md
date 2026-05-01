@@ -97,7 +97,7 @@ Android, Windows 10/11, and Linux are available.
 	Extended ID: 0x0000010a  DLC: 6  Data: 0x10 0x11 0x12 0x13 0x14 0x15
 	```
 
-- Remove serial device   
+- Remove serial device after use   
 	```
 	$ sudo rfcomm release 0
 	```
