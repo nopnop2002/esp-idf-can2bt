@@ -35,3 +35,75 @@ I used a USB Bluetooth dongle.
 
 - Unpair the device after use   
 	<img width="1138" height="675" alt="Image" src="https://github.com/user-attachments/assets/2df38b14-c4d6-455d-8139-b4031747dd03" />
+
+
+## Using Linux
+
+- Install package   
+	```
+	$ sudo apt install bluez
+	```
+
+- Start daemon   
+	```
+	$ sudo systemctl enable --now bluetooth
+	```
+
+- Pair using bluetoothctl
+	```
+	$ bluetoothctl
+	[bluetoothctl]> power on
+	[bluetoothctl]> agent on
+	[bluetoothctl]> scan on
+	[CHG] Controller 00:1B:DC:03:D3:E5 Discovering: yes
+	[NEW] Device F0:08:D1:C7:B5:1E ESP_SPP_ACCEPTOR
+	[bluetoothctl]> scan off
+	[bluetoothctl]> pair F0:08:D1:C7:B5:1E
+	[agent] Confirm passkey 771049 (yes/no): yes
+	Pairing successful
+	[ESP_SPP_ACCEPTOR]> exit
+	```
+
+- Create serial device   
+	```
+	$ sudo rfcomm bind 0 F0:08:D1:C7:B5:1E
+	$ ls /dev/rfcomm*
+	/dev/rfcomm0
+	```
+
+- Monitor serial device   
+	```
+	$ cat /dev/rfcomm0
+	Standard ID: 0x106       DLC: 1  Data: 0x10
+
+	Extended ID: 0x00000106  DLC: 2  Data: 0x10 0x11
+
+	Standard ID: 0x107       DLC: 2  Data: 0x10 0x11
+
+	Extended ID: 0x00000107  DLC: 3  Data: 0x10 0x11 0x12
+
+	Standard ID: 0x108       DLC: 3  Data: 0x10 0x11 0x12
+
+	Extended ID: 0x00000108  DLC: 4  Data: 0x10 0x11 0x12 0x13
+
+	Standard ID: 0x109       DLC: 4  Data: 0x10 0x11 0x12 0x13
+
+	Extended ID: 0x00000109  DLC: 5  Data: 0x10 0x11 0x12 0x13 0x14
+
+	Standard ID: 0x10a       DLC: 5  Data: 0x10 0x11 0x12 0x13 0x14
+
+	Extended ID: 0x0000010a  DLC: 6  Data: 0x10 0x11 0x12 0x13 0x14 0x15
+	```
+
+- Remove serial device   
+	```
+	$ sudo rfcomm release 0
+	```
+
+- Unpair using bluetoothctl   
+	```
+	$ bluetoothctl
+	[bluetoothctl]> remove F0:08:D1:C7:B5:1E
+	[bluetoothctl]> power off
+	[bluetoothctl]> exit
+	```
