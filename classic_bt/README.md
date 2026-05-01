@@ -16,7 +16,7 @@
 ## Using Windows10/11   
 I used a USB Bluetooth dongle.   
 
-- Open Settigs -> Bluetooth   
+- Open Settigs -> Devices   
 	Click Add bluetooth or other device.   
 	<img width="1138" height="675" alt="Image" src="https://github.com/user-attachments/assets/19a13249-f87a-4a13-bdbe-68c9d64364f9" />
 
@@ -27,8 +27,8 @@ I used a USB Bluetooth dongle.
 	<img width="550" height="633" alt="Image" src="https://github.com/user-attachments/assets/7af78e85-1b94-425f-a050-3d3155691ff3" />
 
 - Pair with ESP_SPP_ACCEPTER   
-<img width="550" height="633" alt="Image" src="https://github.com/user-attachments/assets/9895ee51-311e-4e38-a27d-f5a35865c174" />
+	<img width="550" height="633" alt="Image" src="https://github.com/user-attachments/assets/9895ee51-311e-4e38-a27d-f5a35865c174" />
 
-- Open terminal software & open new com port.
-	I use teraterm.
+- Open terminal software & open new com port   
+	I use TeraTerm.   
 	<img width="799" height="426" alt="Image" src="https://github.com/user-attachments/assets/3fec1343-cffa-4b41-a3f6-94fd9a861777" />
