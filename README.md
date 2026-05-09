@@ -23,7 +23,7 @@ Other features are the same.
 I used 150 ohms.   
 
 # Wireing   
-|SN65HVD23x||ESP32|ESP32-S2/S3|ESP32-C3/C6||
+|SN65HVD23x||ESP32|ESP32-S2/S3|ESP32-Cx/Hx||
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |D(CTX)|--|GPIO21|GPIO17|GPIO0|(*1)|
 |GND|--|GND|GND|GND||
@@ -95,7 +95,6 @@ idf.py flash
 ```
 git clone https://github.com/nopnop2002/esp-idf-can2bt
 cd esp-idf-can2bt/bluedroid_ble
-idf.py set-target {esp32/esp32s3/esp32c2/esp32c3/esp32c6}
 idf.py menuconfig
 idf.py flash
 ```
@@ -105,7 +104,6 @@ idf.py flash
 ```
 git clone https://github.com/nopnop2002/esp-idf-can2bt
 cd esp-idf-can2bt/nimble_ble
-idf.py set-target {esp32/esp32s3/esp32c2/esp32c3/esp32c6}
 idf.py menuconfig
 idf.py flash
 ```
